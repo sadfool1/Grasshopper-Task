@@ -17,13 +17,7 @@ class Main(tk.Frame):
     
     def __init__ (self):
         
-        self.root = Tk()
-        self.root.grid()
-        self.root.title("Graph Data")
-        self.timestamp = None
-        
         self.price_analyzer = pd.read_csv(os.path.join(os.path.dirname(__file__), "interview_task.csv"))
-        print (self.price_analyzer[1])
 
         
 if __name__ == '__main__':
